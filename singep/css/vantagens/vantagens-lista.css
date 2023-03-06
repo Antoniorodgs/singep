@@ -1,0 +1,66 @@
+.vantagens-lista {
+  padding-top: 60px;
+  padding-bottom: 12px;
+}
+
+.vantagens-lista h2 {
+  margin-bottom: 40px;
+}
+.vantagens-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+.vantagens-lista li {
+  min-width: 280px;
+  flex: 1;
+}
+
+.vantagens-lista a {
+  display: block;
+}
+
+.imagenstratamento img {
+  width: 240px;
+  height: 300px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.vantagens-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.vantagens-lista h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--cor-p1);
+  transition: widht 0.2s;
+}
+
+.vantagens-lista a:hover h3::before {
+  width: 24px;
+}
+
+.vantagens-lista li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .vantagens-lista {
+    padding-bottom: 60px;
+  }
+  .vantagens-lista ul {
+    gap: 20px;
+  }
+}
